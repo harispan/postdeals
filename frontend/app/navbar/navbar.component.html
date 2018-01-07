@@ -1,0 +1,42 @@
+<nav class="navbar navbar-inverse navbar-static-top example6">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar6">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand text-hide" routerLink="/deal_list">Brand Text
+      </a>
+    </div>
+    <div id="navbar6" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link"
+             routerLink="/deal_list"
+             href="#">Home</a>
+        </li>
+        <li><a href="#">About</a></li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link"
+             routerLink="/login"
+             href="#">
+            {{ isloggedin() ? 'Logout' : 'Login' }}</a>
+        </li>
+
+        <li class="nav-item" routerLinkActive="active"  *ngIf="!isloggedin()">
+          <a class="nav-link"
+             routerLink="/register"
+             href="#">
+            Register
+            </a></li>
+
+
+
+      </ul>
+    </div>
+    <!--/.nav-collapse -->
+  </div>
+  <!--/.container-fluid -->
+</nav>

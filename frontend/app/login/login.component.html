@@ -1,0 +1,21 @@
+
+
+
+<!--if is logged-in the message that he has been logged-out-->
+      <div class="form-signin alert alert-success" [hidden]="!wasloggedin">
+        <strong>Success!</strong> You have been logged-out.
+      </div>
+
+
+
+
+
+<form class="form-signin" #f="ngForm" (ngSubmit)="signIn(f.value)">
+  <h2 class="form-signin-heading">Please sign in</h2>
+  <div *ngIf="invalidLogin" class="alert alert-danger">Invalid username and/or password.</div>
+  <label for="username" class="sr-only">Username</label>
+  <input type="username" id="username" name="username" ngModel class="form-control" placeholder="Username" required autofocus>
+  <label for="password" class="sr-only">Password</label>
+  <input type="password" id="password" name="password" ngModel class="form-control" placeholder="Password" required>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+</form>
