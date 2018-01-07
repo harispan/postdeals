@@ -8,4 +8,4 @@
 * Post comments on other deals
 * Like/Dislike other deals
 
-Documentation is still being updated!
+*Documentation is still being updated!*
