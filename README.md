@@ -1,6 +1,6 @@
 
-![alt text](https://i.imgur.com/L5ysbkC.png "Logo")
-  **live demo** https://snf-797523.vm.okeanos.grnet.gr ⋅⋅
+![alt text](https://i.imgur.com/L5ysbkC.png "Logo")⋅⋅
+  **live demo** https://snf-797523.vm.okeanos.grnet.gr 
 
 * Deal sharing community
 * Each user can post deals 
