@@ -1,0 +1,53 @@
+
+<div class="container">
+  <div class="row">
+    <hr>
+    <div class="col-md-8 col-md-offset-2">
+      <h2>Latest Deals</h2>
+      <div class="grid grid-pad">
+        <!--printing the deals-->
+        <a *ngFor="let deal of deals | paginate: { itemsPerPage: 10, currentPage: p }"
+           [routerLink]="['/detail', deal.id]"  class="col-1-4">
+
+
+          <div [hidden]="deal.active === false" >
+            <h4><span class="glyphicon glyphicon-fire"></span> {{ deal.id }}
+
+              , {{deal.title}}, {{deal.created_at | date}}
+
+            </h4>
+          </div>
+        </a>
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+
+</div>
+  </div>
+  </div>
+  <hr>
+  <div class="row" [hidden]="!isloggedin()">
+    <div class="col-lg-offset-0">
+      <form class="form-deal" #f="ngForm" (ngSubmit)="postDeal(f.value)">
+        <h2 class="form-deal-heading">Post Deal</h2>
+        <div *ngIf="invalidLogin" class="alert alert-danger">Deal submission failed, please try again and check for errors in link.</div>
+        <div *ngIf="successSubmit" class="alert alert-success">Deal submission was successful.</div>
+
+        <label for="title" class="sr-only">Username</label>
+        <input type="text" id="title" name="title" ngModel class="form-control" placeholder="Deal Title" required autofocus>
+        <label for="url" class="sr-only">Password</label>
+        <input type="url" id="url" name="url" ngModel class="form-control" placeholder="Deal link" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" [disabled]="!f.valid">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="row" [hidden]="isloggedin()">
+  <div class="col-md-10 col-lg-10">
+    <div class="form-deal" >
+      <h2 class="form-deal-heading">Post Deal</h2>
+      <div class="alert alert-warning">
+        <strong>Warning!</strong> You have to be logged in to post a deal.
+      </div>
+
+    </div>
+  </div>
+</div>
