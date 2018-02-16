@@ -85,14 +85,3 @@ class ListCreateReview(generics.ListCreateAPIView):
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
 
-# # specific review
-# class ListCreateSpecificReview(generics.ListCreateAPIView):
-#     permission_classes = (IsAuthenticatedOrReadOnly,)
-#     queryset = models.Review.objects.all()
-#     serializer_class = serializers.ReviewSerializer
-#
-#     def get_queryset(self):
-#         return models.Review.objects.filter(id=self.kwargs.get('review_pk'))
-#
-#     def perform_create(self, serializer):
-#         serializer.save(owner=self.request.user)
