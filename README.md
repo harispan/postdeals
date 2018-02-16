@@ -7,13 +7,10 @@ ___
 
 
 
-Authentication & Authorization: **JWT**
-
-DBMS: **MySQL**
-
-Front-End: **Angular** 
-
-Back-End: **Django**
+  Authentication & Authorization: **JWT**  
+  DBMS: **MySQL**  
+  Front-End: **Angular**  
+  Back-End: **Django**
 
 Use Cases & Functionality:
 ------
