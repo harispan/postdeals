@@ -1,9 +1,10 @@
 
 ![alt text](https://i.imgur.com/L5ysbkC.png "Logo")
 ___
-  **live demo** https://snf-797523.vm.okeanos.grnet.gr 
+#####  Deal sharing community, where users find deals online from retailers and share them with the community
+  **live demo**: https://snf-797523.vm.okeanos.grnet.gr 
 
-######  Deal sharing community, where users find deals online from retailers and share them with the community
+
 
 
 Authentication & Authorization: **JWT**
