@@ -4,8 +4,16 @@
   **live demo** https://snf-797523.vm.okeanos.grnet.gr 
 
 * Deal sharing community
-* Each user can post deals 
-* Post comments on other deals
-* Like/Dislike other deals
 
-*Documentation is still being updated!*
+
+Authentication: JWT
+Use Cases:
+⋅⋅* Register User
+⋅⋅* Login User
+⋅⋅* Post a deal
+⋅⋅* Comment on a Deal
+⋅⋅* Like/Dislike a Deal
+⋅⋅* Pagination on Deals and Comments
+⋅⋅* Method to check if JWT is still valid
+⋅⋅* If user not logged in then forms are hidden (Post a Deal form and Comment)
+
