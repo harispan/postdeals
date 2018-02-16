@@ -6,13 +6,13 @@
 ######  Deal sharing community, where users find deals online from retailers and share them with the community
 
 
-Authentication: JWT
+Authentication & Authorization: **JWT**
 
-DBMS: MySQL
+DBMS: **MySQL**
 
-Front-End: Angular 
+Front-End: **Angular** 
 
-Back-End: Django
+Back-End: **Django**
 
 Use Cases & Functionality:
 ------
