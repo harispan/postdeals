@@ -7,8 +7,11 @@
 
 
 Authentication: JWT
+
 DBMS: MySQL
+
 Front-End: Angular 
+
 Back-End: Django
 
 Use Cases & Functionality:
