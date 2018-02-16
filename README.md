@@ -30,3 +30,11 @@ Use Cases & Functionality:
 * If a user is not logged-in then forms are hidden (Post a Deal form and Comment) and a warning informs them that they have to log-in in order to post a Deal/Comment also like/dislike buttons are hidden 
 * When a user clicks "logout" he is redirected to the login page and a success message is displayed that he has logged-out succesfully
 
+**registered account**:
+
+  username: user_test     
+  password: 123456  
+  *to see full functionality please register*
+
+**By: Charalampos Panidis (AM 8140181)**
+
